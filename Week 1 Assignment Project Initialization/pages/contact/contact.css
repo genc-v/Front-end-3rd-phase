@@ -109,6 +109,9 @@ button {
 }
 
 @media only screen and (max-width: 960px) {
+  .contactContainer {
+    margin-top: 4rem;
+  }
   .form-container {
     gap: 1rem;
   }

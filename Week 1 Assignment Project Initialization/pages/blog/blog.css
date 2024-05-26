@@ -80,6 +80,9 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .blogContainer {
+    margin-top: 4rem;
+  }
   .secondArea {
     flex-direction: column;
   }

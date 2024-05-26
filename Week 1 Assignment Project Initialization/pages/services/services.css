@@ -68,6 +68,9 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .ourServiceContainer {
+    margin-top: 2rem;
+  }
   .ourSerivce {
     width: 100%;
     justify-content: space-evenly;
