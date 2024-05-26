@@ -1,0 +1,119 @@
+.contactContainer {
+  margin-top: 14rem;
+}
+
+#map-container {
+  width: 100%;
+  height: 30rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.getInTouch {
+  padding: 2rem 3rem;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.getInTouch h2 {
+  font-size: 1.5rem;
+}
+
+.infoText {
+  width: 50%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+form {
+  width: 49%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+form input,
+textarea,
+button,
+.label-input {
+  border: none;
+  background-color: #ffffff00;
+  outline: none;
+}
+
+/* input {
+  font-size: 1rem;
+} */
+
+label {
+  font-size: 1rem;
+}
+input,
+textarea {
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.label-input {
+  background-color: #dbdbdb87;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #00000055;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+  box-shadow: none;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  gap: 0.6em;
+}
+
+.messageInput {
+  background-color: #dbdbdb87;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #00000055;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+  box-shadow: none;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  overflow: auto;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: #e79951;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  min-width: 30%;
+}
+
+@media only screen and (max-width: 960px) {
+  .form-container {
+    gap: 1rem;
+  }
+  .form-group {
+    gap: 1rem;
+    flex-direction: column;
+  }
+}

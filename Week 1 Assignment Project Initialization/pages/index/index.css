@@ -1,0 +1,490 @@
+.headerInfoBar {
+  width: 100%;
+  background-color: color(srgb 0.94 0.62 0.33);
+  color: #fff;
+  justify-content: space-between;
+  padding: 1.3rem 2rem;
+}
+
+a {
+  color: #000;
+}
+.headerInfoBar i {
+  font-size: 1.3rem;
+  color: #f5d5b9;
+}
+.headerInfoBar p {
+  color: #fff;
+}
+
+.headerInfoBar,
+.headerInfoBar a,
+.actionContactButtons,
+.socialMediaButtons {
+  display: flex;
+  align-items: center;
+}
+
+.actionContactButtons {
+  /* width: 28%; */
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.actionContactButtons a {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialMediaButtons {
+  width: 28%;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  transition: 0.2s;
+  width: auto;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.fa-brands::after {
+  content: "";
+  width: 1rem;
+  aspect-ratio: 1/1;
+  background-color: #e79a5100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 100rem;
+  transition: 0.2s;
+}
+
+.fa-brands:hover::after {
+  background-color: #e79951;
+  width: 3rem;
+}
+/* .socialMediaButtons i:hover {
+  background-color: red;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 100rem;
+} */
+
+img {
+  aspect-ratio: 1/1;
+  width: 2rem;
+}
+
+.navBar {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navBarIcons i,
+.navBarIcons {
+  color: #656565;
+}
+
+.rightSideOfNavBar {
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+  transform: translateX(0%);
+}
+.rightSideOfNavBar a,
+.leftSideOfNavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.rightSideOfNavBar a {
+  height: 9.4rem;
+  transition: 0.2s;
+  width: 100%;
+  padding: 0 1rem;
+}
+.rightSideOfNavBar a:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.activeSite,
+.activeSite i {
+  color: #f09f54;
+}
+
+.leftSideOfNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.leftSideOfNavBar img {
+  width: auto;
+  width: 6.5rem;
+  transform: scale(2);
+  background: none;
+}
+.leftSideOfNavBar h1 {
+  font-size: 2.3rem;
+}
+.fixedElements {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.heroArea {
+  margin-top: 13rem;
+  background: url("../../images/background-Z91Hc_cy.png");
+  width: 100%;
+  display: flex;
+  padding: 5% 12%;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heroArea * {
+  color: #fff;
+}
+
+.heroArea p,
+.heroArea a {
+  font-size: 1rem;
+}
+.heroArea .heroInfoText {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heroArea h1 {
+  font-size: 3rem;
+}
+
+.heroArea h3 {
+  font-size: var(--fontB);
+}
+
+.heroArea img {
+  width: 29rem;
+  transform: scale(1.2);
+  /* background-color: red; */
+}
+
+.heroArea .heroInfoText .actionButtons {
+  display: flex;
+  gap: 2rem;
+  /* background-color: red; */
+}
+.heroArea .heroInfoText .actionButtons a {
+  border: 1px solid #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 999rem;
+  font-weight: bold;
+}
+.actionButtons .actionButtonsColored {
+  background-color: #fff;
+  color: orange;
+}
+
+.WelcomeToFlario {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 3rem;
+  /* background-color: red; */
+}
+
+.superTitle {
+  font-size: 2.6rem;
+  margin-bottom: 5rem;
+  display: inline-block;
+  position: relative;
+}
+.superTitle::after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 2rem;
+  height: 3px;
+  background-color: #f7cfa9;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.featuresOfFlario {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.flarioFeatures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.flarioFeatures i {
+  font-size: 2rem;
+  color: #fff;
+}
+.flarioFeatures div {
+  background: #f09f54;
+  width: 7rem;
+  aspect-ratio: 1/1;
+  border-radius: 10000rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flarioFeaturesTitle {
+  color: #f09f54;
+  font-weight: bold;
+}
+
+.ourTeam {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 2.5rem;
+}
+
+.TeamDescriptions {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  gap: 0.01rem;
+}
+.memberCards {
+  border: 1px solid #00000043;
+  padding: 0.7rem;
+  text-align: left;
+  width: 24%;
+}
+.memberCards p {
+  padding: 1.4rem 1.1rem 0 1.1rem;
+  font-weight: bold;
+}
+
+.memberCards p:last-child {
+  padding: 1rem 1.1rem;
+  font-weight: normal;
+  color: #00000089;
+}
+
+.backgroundImageMembmers {
+  aspect-ratio: 1/1;
+  background-color: red;
+  width: 100%;
+}
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 7rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.About {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.RecentNews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+.flarioNews:after,
+.flarioPosts::after {
+  content: "";
+  width: 100%;
+  margin: 1rem 0;
+  height: 1px;
+  display: block;
+  background-color: #ffffff40;
+}
+footer h3 {
+  font-size: 1.5rem;
+}
+footer h3::after {
+  content: "";
+  display: block;
+  background-color: #ffffff5e;
+  height: 3px;
+  width: 30px;
+  margin-top: 1rem;
+}
+.RecentPosts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.flarioPosts div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flarioPosts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.flarioPosts .roundDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  border-radius: 999rem;
+  width: 9rem;
+  color: #000;
+  outline: 0.5em solid #fff;
+  background-color: #f09f54;
+}
+.conatctUs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.followUs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.followUs div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.followUs div i {
+  background-color: red;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+}
+.notOnDesktop {
+  display: none !important;
+}
+#menuToggle {
+  cursor: pointer;
+}
+.fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .fa-bars {
+    display: block;
+  }
+  .notOnDesktop {
+    display: flex !important;
+  }
+  .headerInfoBar {
+    display: none;
+  }
+
+  .navBar {
+    padding: 0.8rem 1rem;
+  }
+  .navBar .leftSideOfNavBar {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .leftSideOfNavBar img {
+    display: none;
+  }
+
+  .navBar .rightSideOfNavBar {
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    right: 0%;
+    transform: translateX(300%);
+    /* transform: translateX(0%); */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    gap: 0rem;
+    min-width: 35%;
+    transition: 0.6s;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .rightSideOfNavBar div {
+    flex: 1;
+  }
+  .rightSideOfNavBar a {
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    width: 3rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .rightSideOfNavBar a:hover {
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .heroArea {
+    margin-top: 2rem;
+    flex-direction: column;
+    padding: 8% 2%;
+    align-items: flex-start;
+  }
+  .featuresOfFlario {
+    flex-direction: column;
+  }
+  .TeamDescriptions {
+    gap: 1rem;
+  }
+  .memberCards {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .backgroundImageMembmers {
+    aspect-ratio: 4/3;
+  }
+  .memberCards {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .RecentNews,
+  .RecentPosts {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
