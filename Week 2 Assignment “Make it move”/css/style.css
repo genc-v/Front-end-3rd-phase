@@ -1,0 +1,11 @@
+* {
+  font-size: 62.5%;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+:root {
+  --fontB: 1.3rem;
+}
