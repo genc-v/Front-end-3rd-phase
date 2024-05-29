@@ -12,12 +12,11 @@
       rel="stylesheet"
       href="/Week 1 Assignment Project Initialization/css/styleReset.css"
     />
-    <link
-      rel="stylesheet"
-      href="/Week 1 Assignment Project Initialization/css/style.css"
-    />
+    <link rel="stylesheet" href="../../css/style.css" />
+
     <link rel="stylesheet" href="../index/index.css" />
     <link rel="stylesheet" href="./portfolio.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
     <div class="fixedElements">
@@ -25,11 +24,11 @@
         <div class="actionContactButtons">
           <a href="#">
             <i class="fa-solid fa-phone"></i>
-            <p>+ 1 555 555-555</p>
+            <p class="underLineHover">+ 1 555 555-555</p>
           </a>
           <a href="#">
             <i class="fa-solid fa-envelope"></i>
-            <p>sample@sample.com</p>
+            <p class="underLineHover">sample@sample.com</p>
           </a>
         </div>
         <div class="socialMediaButtons">
@@ -43,43 +42,47 @@
         </div>
       </div>
       <div class="navBar">
-        <div class="leftSideOfNavBar" id="menuToggle">
+        <div class="leftSideOfNavBar">
           <img
             src="../../images/campfire-CLP0V045.svg"
             alt=""
             class="favIcon"
           />
           <a href="../index/index.html">
-            <h1 class="pageName">Flario</h1>
+            <h1 class="pageName underLineHover">Flario</h1>
           </a>
-          <i class="fa-solid fa-bars" id="menuToggle"></i>
+          <div class="menuToggle" id="menuToggle">
+            <div class="menuLines"></div>
+            <div class="menuLines menuLinesBottom"></div>
+          </div>
+          <!-- <i class="fa-solid fa-bars" id="menuToggle"></i> -->
         </div>
         <div class="rightSideOfNavBar" id="rightSideOfNavBar">
           <a class="navBarIcons home" href="../index/index.html">
-            <p>Home</p>
+            <p class="underLineHover">Home</p>
             <i class="fa-solid fa-house"></i>
           </a>
           <a class="navBarIcons about" href="../about/about.html">
-            <p>About</p>
+            <p class="underLineHover">About</p>
             <i class="fa-solid fa-user-group"></i>
           </a>
-          <a class="navBarIcons services" href="../services/service.htm">
-            <p>Services</p>
+          <a class="navBarIcons services" href="../services/service.html">
+            <p class="underLineHover">Services</p>
             <i class="fa-solid fa-book-open"></i>
           </a>
           <a
             class="navBarIcons portfolio activeSite"
             href="../portfolio/portfolio.html"
           >
-            <p>Portfolio</p>
+            <p class="underLineHover">Portfolio</p>
             <i class="fa-solid fa-bookmark"></i>
           </a>
           <a class="navBarIcons blog" href="../blog/blog.html">
-            <p>Blog</p>
+            <p class="underLineHover">Blog</p>
             <i class="fa-solid fa-globe"></i>
           </a>
           <a class="navBarIcons contact" href="../contact/contact.html">
-            <p>Contact</p>
+            <p class="underLineHover">Contact</p>
             <i class="fa-solid fa-phone"></i>
           </a>
 
@@ -98,288 +101,287 @@
       </div>
     </div>
 
-    <div class="WelcomeToFlario Portfolio">
-      <div class="porfolioImages">
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(8\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(7\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(6\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(5\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(4\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(3\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(2\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(1\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(9\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(10\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(11\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(12\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(13\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(14\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(15\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
-        </div>
-        <div
-          class="imageShowcase"
-          style="
-            background: url('../../images/\ \(16\).jpg') center;
-            background-size: cover;
-          "
-        >
-          <i class="fa-solid fa-link"></i>
-          <p class="nameImage">Adrian</p>
-          <p>Unspash</p>
+    <div class="moveUp">
+      <div class="WelcomeToFlario Portfolio">
+        <div class="porfolioImages">
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\(8\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(7\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(6\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(5\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(4\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(3\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(2\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(1\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(9\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(10\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(11\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(12\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(13\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(14\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(15\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
+          <div
+            class="imageShowcase"
+            style="
+              background: url('../../images/\\(16\).jpg') center;
+              background-size: cover;
+            "
+          >
+            <i class="fa-solid fa-link"></i>
+            <p class="nameImage">Adrian</p>
+            <p>Unspash</p>
+          </div>
         </div>
       </div>
+      <footer>
+        <div class="About">
+          <h3>About Flairo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            eget metus varius, malesuada nulla sed, ultrices est. Proin sed nisl
+            tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo.
+            <br />
+            <br />
+            Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet,
+            fringilla at leo.
+          </p>
+        </div>
+        <div class="RecentNews">
+          <h3>Recent News</h3>
+          <div>
+            <div class="flarioNews">
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Donec at nunc eget massa bibendum ultrices.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Donec non sem fermentum, malesuada augue.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Sed pharetra metus vitae diam blandit.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Proin quis lacus lobortis, semper arcu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="RecentPosts">
+          <h3>Recent Posts</h3>
+          <div class="flarioPosts">
+            <div>
+              <div class="roundDate">
+                <p>May 26</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur. Donec at nunc eget
+                massa bibendum ultrices
+              </p>
+            </div>
+          </div>
+          <div class="flarioPosts">
+            <div>
+              <div class="roundDate">
+                <p>May 25</p>
+              </div>
+              <p>
+                Donec non sem fermentum, malesuada augue. Sed pharetra metus
+                vitae diam blandit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="conatctUs">
+          <h3>Recent News</h3>
+          <p>Contact Us</p>
+          <p>(555) 555-5555</p>
+          <p>email@flairo.com</p>
+          <p>@twitter</p>
+          <div class="followUs">
+            <h3>Follow Us</h3>
+            <div>
+              <i
+                style="background-color: #22a0f7"
+                class="fa-brands fa-facebook"
+              ></i>
+              <i
+                style="background-color: #f01480"
+                class="fa-brands fa-instagram"
+              ></i>
+              <i
+                style="background-color: #2c9add"
+                class="fa-brands fa-twitter"
+              ></i>
+              <i
+                style="background-color: #ff6215"
+                class="fa-brands fa-soundcloud"
+              ></i>
+              <i
+                style="background-color: #9a55ff"
+                class="fa-brands fa-twitch"
+              ></i>
+              <i
+                style="background-color: #fe1614"
+                class="fa-brands fa-youtube"
+              ></i>
+              <i
+                style="background-color: #1482bb"
+                class="fa-bra`ds fa-linkedin"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <footer>
-      <div class="About">
-        <h3>About Flairo</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget
-          metus varius, malesuada nulla sed, ultrices est. Proin sed nisl
-          tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo.
-          <br />
-          <br />
-          Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet,
-          fringilla at leo.
-        </p>
-      </div>
-      <div class="RecentNews">
-        <h3>Recent News</h3>
-        <div>
-          <div class="flarioNews">
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Donec at nunc eget massa bibendum ultrices.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Donec non sem fermentum, malesuada augue.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Sed pharetra metus vitae diam blandit.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Proin quis lacus lobortis, semper arcu.</p>
-          </div>
-        </div>
-      </div>
-      <div class="RecentPosts">
-        <h3>Recent Posts</h3>
-        <div class="flarioPosts">
-          <div>
-            <div class="roundDate">
-              <p>May 26</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur. Donec at nunc eget massa
-              bibendum ultrices
-            </p>
-          </div>
-        </div>
-        <div class="flarioPosts">
-          <div>
-            <div class="roundDate">
-              <p>May 25</p>
-            </div>
-            <p>
-              Donec non sem fermentum, malesuada augue. Sed pharetra metus vitae
-              diam blandit.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="conatctUs">
-        <h3>Recent News</h3>
-
-        <p>Contact Us</p>
-        <p>(555) 555-5555</p>
-        <p>email@flairo.com</p>
-        <p>@twitter</p>
-        <div class="followUs">
-          <h3>Follow Us</h3>
-          <div>
-            <i
-              style="background-color: #22a0f7"
-              class="fa-brands fa-facebook"
-            ></i>
-            <i
-              style="background-color: #f01480"
-              class="fa-brands fa-instagram"
-            ></i>
-            <i
-              style="background-color: #2c9add"
-              class="fa-brands fa-twitter"
-            ></i>
-            <i
-              style="background-color: #ff6215"
-              class="fa-brands fa-soundcloud"
-            ></i>
-            <i
-              style="background-color: #9a55ff"
-              class="fa-brands fa-twitch"
-            ></i>
-            <i
-              style="background-color: #fe1614"
-              class="fa-brands fa-youtube"
-            ></i>
-            <i
-              style="background-color: #1482bb"
-              class="fa-bra`ds fa-linkedin"
-            ></i>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
   <script>
     document
@@ -388,9 +390,37 @@
         var element = document.getElementById("rightSideOfNavBar");
         if (element.style.transform === "translateX(0%)") {
           element.style.transform = "translateX(300%)";
+          document.querySelector(".menuLines").style.transform =
+            "translateY(0) rotate(0)";
+          document.querySelector(".menuLinesBottom").style.transform =
+            "translateY(0) rotate(0)";
         } else {
           element.style.transform = "translateX(0%)";
+          document.querySelector(".menuLines").style.transform =
+            "translateY(6px) rotate(35deg)";
+          document.querySelector(".menuLinesBottom").style.transform =
+            "translateY(-6px) rotate(-35deg)";
         }
       });
+
+    gsap.from(".navBar", {
+      duration: 1.5,
+      y: -300,
+      ease: "Power2.easeInOut",
+    });
+    gsap.from(".headerInfoBar", {
+      duration: 1.4,
+      y: -100,
+      ease: "Power2.easeInOut",
+    });
+    gsap.from(".moveUp", {
+      duration: 1.5,
+      y: "100vh",
+      ease: "Power2.easeInOut",
+      onComplete: function () {
+        // Change CSS after animation completes
+        document.querySelector(".moveUp").style.height = "auto";
+      },
+    });
   </script>
 </html>

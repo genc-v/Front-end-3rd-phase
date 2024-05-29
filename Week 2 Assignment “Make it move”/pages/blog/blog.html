@@ -12,12 +12,11 @@
       rel="stylesheet"
       href="/Week 1 Assignment Project Initialization/css/styleReset.css"
     />
-    <link
-      rel="stylesheet"
-      href="/Week 1 Assignment Project Initialization/css/style.css"
-    />
+    <link rel="stylesheet" href="../../css/style.css" />
+
     <link rel="stylesheet" href="../index/index.css" />
     <link rel="stylesheet" href="./blog.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
     <div class="fixedElements">
@@ -25,11 +24,11 @@
         <div class="actionContactButtons">
           <a href="#">
             <i class="fa-solid fa-phone"></i>
-            <p>+ 1 555 555-555</p>
+            <p class="underLineHover">+ 1 555 555-555</p>
           </a>
           <a href="#">
             <i class="fa-solid fa-envelope"></i>
-            <p>sample@sample.com</p>
+            <p class="underLineHover">sample@sample.com</p>
           </a>
         </div>
         <div class="socialMediaButtons">
@@ -43,40 +42,44 @@
         </div>
       </div>
       <div class="navBar">
-        <div class="leftSideOfNavBar" id="menuToggle">
+        <div class="leftSideOfNavBar">
           <img
             src="../../images/campfire-CLP0V045.svg"
             alt=""
             class="favIcon"
           />
           <a href="../index/index.html">
-            <h1 class="pageName">Flario</h1>
+            <h1 class="pageName underLineHover">Flario</h1>
           </a>
-          <i class="fa-solid fa-bars" id="menuToggle"></i>
+          <div class="menuToggle" id="menuToggle">
+            <div class="menuLines"></div>
+            <div class="menuLines menuLinesBottom"></div>
+          </div>
+          <!-- <i class="fa-solid fa-bars" id="menuToggle"></i> -->
         </div>
         <div class="rightSideOfNavBar" id="rightSideOfNavBar">
           <a class="navBarIcons home" href="../index/index.html">
-            <p>Home</p>
+            <p class="underLineHover">Home</p>
             <i class="fa-solid fa-house"></i>
           </a>
           <a class="navBarIcons about" href="../about/about.html">
-            <p>About</p>
+            <p class="underLineHover">About</p>
             <i class="fa-solid fa-user-group"></i>
           </a>
-          <a class="navBarIcons services" href="../services/service.htm">
-            <p>Services</p>
+          <a class="navBarIcons services" href="../services/service.html">
+            <p class="underLineHover">Services</p>
             <i class="fa-solid fa-book-open"></i>
           </a>
           <a class="navBarIcons portfolio" href="../portfolio/portfolio.html">
-            <p>Portfolio</p>
+            <p class="underLineHover">Portfolio</p>
             <i class="fa-solid fa-bookmark"></i>
           </a>
-          <a class="navBarIcons blog activeSite" href="#">
-            <p>Blog</p>
+          <a class="navBarIcons blog activeSite" href="../blog/blog.html">
+            <p class="underLineHover">Blog</p>
             <i class="fa-solid fa-globe"></i>
           </a>
           <a class="navBarIcons contact" href="../contact/contact.html">
-            <p>Contact</p>
+            <p class="underLineHover">Contact</p>
             <i class="fa-solid fa-phone"></i>
           </a>
 
@@ -95,76 +98,11 @@
       </div>
     </div>
 
-    <div class="blogContainer">
-      <div class="backgruond"></div>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      <p>
-        <br />
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
-        tincidunt diam, eu ultricies felis. Sed pretium fringilla volutpat.
-        Vestibulum vel justo a sapien tempus pretium ut nec mi. Duis ut turpis
-        sodales, fermentum massa vel, laoreet nibh. Aliquam maximus finibus
-        orci. Suspendisse potenti. Vestibulum pulvinar sapien egestas nulla
-        efficitur vestibulum. Aenean tortor tortor, placerat eget lorem nec,
-        ultrices consequat lacus. Mauris lacinia suscipit lacus, tempus laoreet
-        nulla pellentesque vel. Vivamus at urna ultricies, elementum felis vel,
-        tincidunt felis. Pellentesque vitae neque pellentesque odio aliquet
-        iaculis. Aenean pretium dolor arcu, luctus bibendum leo porta quis. In
-        imperdiet sapien ut maximus mattis.
-        <br />
-        <br />
-        Pellentesque id mauris felis. Nulla rhoncus venenatis velit ut
-        pellentesque. Etiam et erat feugiat justo egestas iaculis et vitae
-        metus. Vestibulum maximus sapien nec elit sodales, ac fermentum sem
-        tempor. Etiam luctus enim aliquam, faucibus lorem nec, vehicula augue.
-        Maecenas imperdiet odio non nisl consequat, sit amet venenatis massa
-        vehicula. Donec odio diam, blandit eu dignissim quis, ultricies nec mi.
-        Sed eget facilisis tortor, ac aliquam erat. In vel augue finibus,
-        venenatis massa a, venenatis dui. Integer quis nisi at nibh pulvinar
-        congue at vel quam.
-        <br />
-        <br />
-
-        Phasellus at urna eget arcu vulputate luctus. Cras quis porta dolor.
-        Fusce a sodales sapien, sed semper arcu. Morbi sed neque sit amet dolor
-        viverra ultrices. Proin ac fermentum ex. Quisque sagittis sed mi
-        suscipit faucibus. Cras ut ex sapien. Nullam eget leo at mauris tempus
-        ornare sit amet at ligula. Vestibulum enim mauris, varius eget leo
-        ultrices, tempus dictum nibh. Morbi ut felis mollis, semper eros vel,
-        rutrum risus. In hac habitasse platea dictumst. Orci varius natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </p>
-      <div class="specialText">
+    <div class="moveUp">
+      <div class="blogContainer">
+        <div class="backgruond"></div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <p>
-          Vivamus imperdiet eros at placerat mollis. Nam rutrum sagittis tellus,
-          ac tempor libero interdum in. Morbi eros neque, tincidunt vitae nisl
-          id, vulputate lacinia dolor. Suspendisse in lectus ac lectus ornare
-          rhoncus a quis ex. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Morbi bibendum, dolor eget blandit fermentum, eros purus porta
-          quam, sit amet lacinia nisl leo eget nunc. Etiam ultricies consequat
-          velit, sit amet iaculis eros. Nulla ut urna ultricies, vestibulum
-          ligula id, efficitur enim. Duis laoreet sollicitudin lacus in egestas.
-          Fusce congue interdum mi.
-          <br />
-          <br />
-        </p>
-        <p class="blogName">MARTIN FLOX</p>
-      </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="secondArea">
-        <div class="sideImage"></div>
-        <p>
-          <br />
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
           tincidunt diam, eu ultricies felis. Sed pretium fringilla volutpat.
@@ -186,179 +124,244 @@
           Maecenas imperdiet odio non nisl consequat, sit amet venenatis massa
           vehicula. Donec odio diam, blandit eu dignissim quis, ultricies nec
           mi. Sed eget facilisis tortor, ac aliquam erat. In vel augue finibus,
-          venenatis massa a, venenatis dui.
-        </p>
-      </div>
-      <p>
-        <br />
-        <br />
-        Nunc et facilisis purus, vitae dapibus lacus. Morbi aliquam libero vitae
-        justo elementum aliquet. Aliquam semper auctor pellentesque. Morbi sit
-        amet dolor eget lacus molestie ullamcorper. Vestibulum nec ornare nisl,
-        ac imperdiet mi. Cras vitae condimentum velit, vitae interdum eros. Cras
-        pretium faucibus tellus, id commodo elit ornare eu. Duis in pretium
-        tortor, et eleifend ipsum. Cras lacus libero, dignissim nec neque
-        ultrices, viverra consectetur enim.
-        <br />
-        <br />
-        Nam id laoreet ex. Aenean diam magna, fringilla ac egestas in, tempus et
-        urna. Proin placerat, felis sit amet rutrum euismod, orci tortor dictum
-        lacus, sed consequat quam augue eu lorem. Duis non imperdiet lorem, nec
-        gravida est. Maecenas ultricies ante lacus, non maximus ex tristique eu.
-        Duis sed posuere lacus. Maecenas quis scelerisque lectus, eget
-        ullamcorper ligula. Nam elementum a lectus et bibendum. Nunc ultricies
-        consectetur dolor nec auctor. Vivamus mattis eros vitae sem venenatis,
-        id aliquam nisi ultricies. In hac habitasse platea dictumst.
-        <br />
-        <br />
-      </p>
-      <div class="thirdArea secondArea">
-        <div class="sideImage"></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
-          tincidunt diam, eu ultricies felis. Sed pretium fringilla volutpat.
-          Vestibulum vel justo a sapien tempus pretium ut nec mi. Duis ut turpis
-          sodales, fermentum massa vel, laoreet nibh. Aliquam maximus finibus
-          orci. Suspendisse potenti. Vestibulum pulvinar sapien egestas nulla
-          efficitur vestibulum. Aenean tortor tortor, placerat eget lorem nec,
-          ultrices consequat lacus. Mauris lacinia suscipit lacus, tempus
-          laoreet nulla pellentesque vel. Vivamus at urna ultricies, elementum
-          felis vel, tincidunt felis. Pellentesque vitae neque pellentesque odio
-          aliquet iaculis. Aenean pretium dolor arcu, luctus bibendum leo porta
-          quis. In imperdiet sapien ut maximus mattis.
+          venenatis massa a, venenatis dui. Integer quis nisi at nibh pulvinar
+          congue at vel quam.
           <br />
           <br />
-          Pellentesque id mauris felis. Nulla rhoncus venenatis velit ut
-          pellentesque. Etiam et erat feugiat justo egestas iaculis et vitae
-          metus. Vestibulum maximus sapien nec elit sodales, ac fermentum sem
-          tempor. Etiam luctus enim aliquam, faucibus lorem nec, vehicula augue.
-          Maecenas imperdiet odio non nisl consequat, sit amet venenatis massa
-          vehicula. Donec odio diam, blandit eu dignissim quis, ultricies nec
-          mi. Sed eget facilisis tortor, ac aliquam erat. In vel augue finibus,
-          venenatis massa a, venenatis dui.
+          Phasellus at urna eget arcu vulputate luctus. Cras quis porta dolor.
+          Fusce a sodales sapien, sed semper arcu. Morbi sed neque sit amet
+          dolor viverra ultrices. Proin ac fermentum ex. Quisque sagittis sed mi
+          suscipit faucibus. Cras ut ex sapien. Nullam eget leo at mauris tempus
+          ornare sit amet at ligula. Vestibulum enim mauris, varius eget leo
+          ultrices, tempus dictum nibh. Morbi ut felis mollis, semper eros vel,
+          rutrum risus. In hac habitasse platea dictumst. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </p>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="userReview">
-        <div class="userProfile"></div>
-        <div class="userInfo">
-          <p class="name">Martin Flox</p>
+        <div class="specialText">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
+            Vivamus imperdiet eros at placerat mollis. Nam rutrum sagittis
+            tellus, ac tempor libero interdum in. Morbi eros neque, tincidunt
+            vitae nisl id, vulputate lacinia dolor. Suspendisse in lectus ac
+            lectus ornare rhoncus a quis ex. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi bibendum, dolor eget blandit
+            fermentum, eros purus porta quam, sit amet lacinia nisl leo eget
+            nunc. Etiam ultricies consequat velit, sit amet iaculis eros. Nulla
+            ut urna ultricies, vestibulum ligula id, efficitur enim. Duis
+            laoreet sollicitudin lacus in egestas. Fusce congue interdum mi.
+            <br />
+            <br />
+          </p>
+          <p class="blogName">MARTIN FLOX</p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="secondArea">
+          <div class="sideImage"></div>
+          <p>
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+            tincidunt diam, eu ultricies felis. Sed pretium fringilla volutpat.
+            Vestibulum vel justo a sapien tempus pretium ut nec mi. Duis ut
+            turpis sodales, fermentum massa vel, laoreet nibh. Aliquam maximus
+            finibus orci. Suspendisse potenti. Vestibulum pulvinar sapien
+            egestas nulla efficitur vestibulum. Aenean tortor tortor, placerat
+            eget lorem nec, ultrices consequat lacus. Mauris lacinia suscipit
+            lacus, tempus laoreet nulla pellentesque vel. Vivamus at urna
+            ultricies, elementum felis vel, tincidunt felis. Pellentesque vitae
+            neque pellentesque odio aliquet iaculis. Aenean pretium dolor arcu,
+            luctus bibendum leo porta quis. In imperdiet sapien ut maximus
+            mattis.
+            <br />
+            <br />
+            Pellentesque id mauris felis. Nulla rhoncus venenatis velit ut
+            pellentesque. Etiam et erat feugiat justo egestas iaculis et vitae
+            metus. Vestibulum maximus sapien nec elit sodales, ac fermentum sem
+            tempor. Etiam luctus enim aliquam, faucibus lorem nec, vehicula
+            augue. Maecenas imperdiet odio non nisl consequat, sit amet
+            venenatis massa vehicula. Donec odio diam, blandit eu dignissim
+            quis, ultricies nec mi. Sed eget facilisis tortor, ac aliquam erat.
+            In vel augue finibus, venenatis massa a, venenatis dui.
           </p>
         </div>
-      </div>
-      <br />
-      <br />
-    </div>
-    <footer>
-      <div class="About">
-        <h3>About Flairo</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget
-          metus varius, malesuada nulla sed, ultrices est. Proin sed nisl
-          tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo.
           <br />
           <br />
-          Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet,
-          fringilla at leo.
+          Nunc et facilisis purus, vitae dapibus lacus. Morbi aliquam libero
+          vitae justo elementum aliquet. Aliquam semper auctor pellentesque.
+          Morbi sit amet dolor eget lacus molestie ullamcorper. Vestibulum nec
+          ornare nisl, ac imperdiet mi. Cras vitae condimentum velit, vitae
+          interdum eros. Cras pretium faucibus tellus, id commodo elit ornare
+          eu. Duis in pretium tortor, et eleifend ipsum. Cras lacus libero,
+          dignissim nec neque ultrices, viverra consectetur enim.
+          <br />
+          <br />
+          Nam id laoreet ex. Aenean diam magna, fringilla ac egestas in, tempus
+          et urna. Proin placerat, felis sit amet rutrum euismod, orci tortor
+          dictum lacus, sed consequat quam augue eu lorem. Duis non imperdiet
+          lorem, nec gravida est. Maecenas ultricies ante lacus, non maximus ex
+          tristique eu. Duis sed posuere lacus. Maecenas quis scelerisque
+          lectus, eget ullamcorper ligula. Nam elementum a lectus et bibendum.
+          Nunc ultricies consectetur dolor nec auctor. Vivamus mattis eros vitae
+          sem venenatis, id aliquam nisi ultricies. In hac habitasse platea
+          dictumst.
+          <br />
+          <br />
         </p>
-      </div>
-      <div class="RecentNews">
-        <h3>Recent News</h3>
-        <div>
-          <div class="flarioNews">
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Donec at nunc eget massa bibendum ultrices.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Donec non sem fermentum, malesuada augue.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Sed pharetra metus vitae diam blandit.</p>
-          </div>
-          <div class="flarioNews">
-            <p>Proin quis lacus lobortis, semper arcu.</p>
-          </div>
+        <div class="thirdArea secondArea">
+          <div class="sideImage"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu
+            tincidunt diam, eu ultricies felis. Sed pretium fringilla volutpat.
+            Vestibulum vel justo a sapien tempus pretium ut nec mi. Duis ut
+            turpis sodales, fermentum massa vel, laoreet nibh. Aliquam maximus
+            finibus orci. Suspendisse potenti. Vestibulum pulvinar sapien
+            egestas nulla efficitur vestibulum. Aenean tortor tortor, placerat
+            eget lorem nec, ultrices consequat lacus. Mauris lacinia suscipit
+            lacus, tempus laoreet nulla pellentesque vel. Vivamus at urna
+            ultricies, elementum felis vel, tincidunt felis. Pellentesque vitae
+            neque pellentesque odio aliquet iaculis. Aenean pretium dolor arcu,
+            luctus bibendum leo porta quis. In imperdiet sapien ut maximus
+            mattis.
+            <br />
+            <br />
+            Pellentesque id mauris felis. Nulla rhoncus venenatis velit ut
+            pellentesque. Etiam et erat feugiat justo egestas iaculis et vitae
+            metus. Vestibulum maximus sapien nec elit sodales, ac fermentum sem
+            tempor. Etiam luctus enim aliquam, faucibus lorem nec, vehicula
+            augue. Maecenas imperdiet odio non nisl consequat, sit amet
+            venenatis massa vehicula. Donec odio diam, blandit eu dignissim
+            quis, ultricies nec mi. Sed eget facilisis tortor, ac aliquam erat.
+            In vel augue finibus, venenatis massa a, venenatis dui.
+          </p>
         </div>
-      </div>
-      <div class="RecentPosts">
-        <h3>Recent Posts</h3>
-        <div class="flarioPosts">
-          <div>
-            <div class="roundDate">
-              <p>May 26</p>
-            </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="userReview">
+          <div class="userProfile"></div>
+          <div class="userInfo">
+            <p class="name">Martin Flox</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur. Donec at nunc eget massa
-              bibendum ultrices
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
             </p>
           </div>
         </div>
-        <div class="flarioPosts">
+        <br />
+        <br />
+      </div>
+      <footer>
+        <div class="About">
+          <h3>About Flairo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            eget metus varius, malesuada nulla sed, ultrices est. Proin sed nisl
+            tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo.
+            <br />
+            <br />
+            Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet,
+            fringilla at leo.
+          </p>
+        </div>
+        <div class="RecentNews">
+          <h3>Recent News</h3>
           <div>
-            <div class="roundDate">
-              <p>May 25</p>
+            <div class="flarioNews">
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
-            <p>
-              Donec non sem fermentum, malesuada augue. Sed pharetra metus vitae
-              diam blandit.
-            </p>
+            <div class="flarioNews">
+              <p>Donec at nunc eget massa bibendum ultrices.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Donec non sem fermentum, malesuada augue.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Sed pharetra metus vitae diam blandit.</p>
+            </div>
+            <div class="flarioNews">
+              <p>Proin quis lacus lobortis, semper arcu.</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="conatctUs">
-        <h3>Recent News</h3>
-
-        <p>Contact Us</p>
-        <p>(555) 555-5555</p>
-        <p>email@flairo.com</p>
-        <p>@twitter</p>
-        <div class="followUs">
-          <h3>Follow Us</h3>
-          <div>
-            <i
-              style="background-color: #22a0f7"
-              class="fa-brands fa-facebook"
-            ></i>
-            <i
-              style="background-color: #f01480"
-              class="fa-brands fa-instagram"
-            ></i>
-            <i
-              style="background-color: #2c9add"
-              class="fa-brands fa-twitter"
-            ></i>
-            <i
-              style="background-color: #ff6215"
-              class="fa-brands fa-soundcloud"
-            ></i>
-            <i
-              style="background-color: #9a55ff"
-              class="fa-brands fa-twitch"
-            ></i>
-            <i
-              style="background-color: #fe1614"
-              class="fa-brands fa-youtube"
-            ></i>
-            <i
-              style="background-color: #1482bb"
-              class="fa-bra`ds fa-linkedin"
-            ></i>
+        <div class="RecentPosts">
+          <h3>Recent Posts</h3>
+          <div class="flarioPosts">
+            <div>
+              <div class="roundDate">
+                <p>May 26</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur. Donec at nunc eget
+                massa bibendum ultrices
+              </p>
+            </div>
+          </div>
+          <div class="flarioPosts">
+            <div>
+              <div class="roundDate">
+                <p>May 25</p>
+              </div>
+              <p>
+                Donec non sem fermentum, malesuada augue. Sed pharetra metus
+                vitae diam blandit.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+        <div class="conatctUs">
+          <h3>Recent News</h3>
+          <p>Contact Us</p>
+          <p>(555) 555-5555</p>
+          <p>email@flairo.com</p>
+          <p>@twitter</p>
+          <div class="followUs">
+            <h3>Follow Us</h3>
+            <div>
+              <i
+                style="background-color: #22a0f7"
+                class="fa-brands fa-facebook"
+              ></i>
+              <i
+                style="background-color: #f01480"
+                class="fa-brands fa-instagram"
+              ></i>
+              <i
+                style="background-color: #2c9add"
+                class="fa-brands fa-twitter"
+              ></i>
+              <i
+                style="background-color: #ff6215"
+                class="fa-brands fa-soundcloud"
+              ></i>
+              <i
+                style="background-color: #9a55ff"
+                class="fa-brands fa-twitch"
+              ></i>
+              <i
+                style="background-color: #fe1614"
+                class="fa-brands fa-youtube"
+              ></i>
+              <i
+                style="background-color: #1482bb"
+                class="fa-bra`ds fa-linkedin"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
   <script>
     document
@@ -367,9 +370,36 @@
         var element = document.getElementById("rightSideOfNavBar");
         if (element.style.transform === "translateX(0%)") {
           element.style.transform = "translateX(300%)";
+          document.querySelector(".menuLines").style.transform =
+            "translateY(0) rotate(0)";
+          document.querySelector(".menuLinesBottom").style.transform =
+            "translateY(0) rotate(0)";
         } else {
           element.style.transform = "translateX(0%)";
+          document.querySelector(".menuLines").style.transform =
+            "translateY(6px) rotate(35deg)";
+          document.querySelector(".menuLinesBottom").style.transform =
+            "translateY(-6px) rotate(-35deg)";
         }
       });
+    gsap.from(".navBar", {
+      duration: 1.5,
+      y: -300,
+      ease: "Power2.easeInOut",
+    });
+    gsap.from(".headerInfoBar", {
+      duration: 1.4,
+      y: -100,
+      ease: "Power2.easeInOut",
+    });
+    gsap.from(".moveUp", {
+      duration: 1.5,
+      y: "100vh",
+      ease: "Power2.easeInOut",
+      onComplete: function () {
+        // Change CSS after animation completes
+        document.querySelector(".moveUp").style.height = "auto";
+      },
+    });
   </script>
 </html>
