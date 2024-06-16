@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.log(last);
 
       await imageManager.loadMoreImages(1);
-      addCard(imageManager.images[numberOfImages - 1].imageUrl, 1);
+      addCard(imageManager.images[numberOfImages].imageUrl, 1);
       localStorage.setItem("numberOfImages", ++numberOfImages);
     });
 
