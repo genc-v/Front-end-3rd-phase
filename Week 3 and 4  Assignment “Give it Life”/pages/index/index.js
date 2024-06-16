@@ -28,6 +28,7 @@ if (rightSideOfNavBar.style.transform === "translateX(0%)") {
 } else {
   mobileMenuOpened = false;
 }
+
 document.getElementById("menuToggle").addEventListener("click", function () {
   if (mobileMenuOpened) {
     rightSideOfNavBar.style.transform = "translateX(300%)";
@@ -109,6 +110,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     imageCard.style.backgroundSize = "cover";
     imageCard.style.backgroundPosition = "center";
     container.appendChild(imageCard);
+
+    imageCard.innerHTML =
+      '<a href="../portfolio/portfolio.html" style="width:70%; height: 100%;display: block;margin: auto"></a>';
     setTimeout(() => {
       imageCard.style.height = "100%";
     }, 1);
