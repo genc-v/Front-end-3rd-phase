@@ -87,18 +87,24 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (last > 1) {
         last--;
       }
+      console.log(last);
+
       await imageManager.loadMoreImages(1);
-      addCardWithAnimation(imageManager.images[numberOfImages - 1].imageUrl, 1);
+      addCard(imageManager.images[numberOfImages - 1].imageUrl, 1);
       localStorage.setItem("numberOfImages", ++numberOfImages);
-      console.log(numberOfImages);
-      console.log(container.children[numberOfImages]);
     });
 
   document
     .querySelector(".image-container__moving-icon--left")
     .addEventListener("click", async () => {
-      if (numberOfImages > 2) {
+      if (numberOfImages > 1) {
+        if (last < numberOfImages - 1) {
+          removeCard();
+        }
         removeCard();
+        last++;
+        console.log(last);
+        console.log(imageManager.images);
         localStorage.setItem("numberOfImages", numberOfImages--);
       }
     });
@@ -118,12 +124,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       imageCard.style.height = "100%";
     }, time);
   }
-  async function addCardWithAnimation(url) {
-    addCard(url);
-  }
+
   async function removeCard() {
     if (container.children.length > 0) {
-      const lastChild = container.children[container.children.length - last++];
+      const lastChild = container.children[container.children.length - last];
       lastChild.style.height = "0%";
     }
   }
