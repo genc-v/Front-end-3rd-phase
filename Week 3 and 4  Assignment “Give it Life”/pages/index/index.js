@@ -84,8 +84,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   document
     .querySelector(".image-container__moving-icon--right")
     .addEventListener("click", async () => {
+      if (last > 1) {
+        last--;
+      }
       await imageManager.loadMoreImages(1);
-      addCard(imageManager.images[numberOfImages - 1].imageUrl);
+      addCardWithAnimation(imageManager.images[numberOfImages - 1].imageUrl, 1);
       localStorage.setItem("numberOfImages", ++numberOfImages);
       console.log(numberOfImages);
       console.log(container.children[numberOfImages]);
@@ -94,15 +97,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   document
     .querySelector(".image-container__moving-icon--left")
     .addEventListener("click", async () => {
-      if (numberOfImages > 1) {
+      if (numberOfImages > 2) {
         removeCard();
-        console.log(numberOfImages);
-        console.log(container.children[numberOfImages]);
         localStorage.setItem("numberOfImages", numberOfImages--);
       }
     });
 
-  async function addCard(url) {
+  async function addCard(url, time = 0) {
     const imageCard = document.createElement("div");
     imageCard.classList.add("image-cotainer__item-show");
 
@@ -115,9 +116,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       '<a href="../portfolio/portfolio.html" style="width:70%; height: 100%;display: block;margin: auto"></a>';
     setTimeout(() => {
       imageCard.style.height = "100%";
-    }, 1);
+    }, time);
   }
-
+  async function addCardWithAnimation(url) {
+    addCard(url);
+  }
   async function removeCard() {
     if (container.children.length > 0) {
       const lastChild = container.children[container.children.length - last++];
