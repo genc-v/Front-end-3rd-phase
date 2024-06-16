@@ -477,33 +477,38 @@ footer h3::after {
   position: relative;
 }
 .image-container__overlay-of-images {
-  width: 60rem;
-
+  width: 80%;
   height: 30rem;
-  background-color: red;
-  overflow: hidden;
+  /* background-color: red; */
+  /* overflow: hidden; */
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
   position: relative;
 }
 .image-container__moving-icon {
   cursor: pointer;
   position: absolute;
-  bottom: 43%;
+  bottom: 35%;
   font-size: 8vh;
-  z-index: 2;
+  z-index: 5;
   color: #00000090;
   transition: 0.1s ease-in-out;
+
+  margin: 3rem;
 }
 .image-container__moving-icon--left {
-  left: 8%;
+  left: 0%;
 }
 .image-container__moving-icon--right {
-  right: 8%;
+  right: 0%;
 }
 
 .image-container__moving-icon:hover {
   transform: scale(1.1);
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 5px 2px 30px #000;
 }
 .image-container__moving-icon:active {
   transform: scale(0.9);
@@ -628,6 +633,12 @@ footer h3::after {
   transform: rotate(90deg);
 }
 
+.image-cotainer__item-show {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  transition: 1.3s;
+}
 @media only screen and (max-width: 1200px) {
   .RecentNews,
   .RecentPosts {
@@ -738,5 +749,8 @@ footer h3::after {
   .ourTeam,
   footer {
     padding: 7rem 5%;
+  }
+  .image-container__moving-icon {
+    font-size: 1rem;
   }
 }

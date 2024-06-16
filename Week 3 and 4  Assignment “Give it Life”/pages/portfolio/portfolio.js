@@ -1,6 +1,5 @@
 import ImageManager from "../../javascript/classes/ImageManager.js";
 
-
 let mobileMenuOpened = false;
 
 var rightSideOfNavBar = document.getElementById("rightSideOfNavBar");
@@ -43,7 +42,6 @@ window.addEventListener("resize", function () {
   }
 });
 if (document.referrer == "") {
-
   gsap.from(".navBar", {
     duration: 1.5,
     y: -300,
@@ -67,7 +65,7 @@ if (document.referrer == "") {
 document.querySelector(".moveUp").style.height = "auto";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const targetElement = document.getElementById("load-more");
+  const targetElement = document.getElementById("view-more");
 
   if (targetElement) {
     setTimeout(function () {
@@ -90,15 +88,16 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     imageManager = new ImageManager(numberOfImagesParsed);
   }
-  imageManager.fetchImages();
+  imageManager.fetchCards();
 
-  document.getElementById("load-more").addEventListener("click", () => {
+  document.getElementById("view-more").addEventListener("click", () => {
+    console.log("it is clicked");
     if (imagesDisplayedOnPortfolio % 4 != 0) {
       let temp = ((imagesDisplayedOnPortfolio % 4) - 4) * -1 + 4;
       imagesDisplayedOnPortfolio += temp;
-      imageManager.loadMoreImages(temp);
+      imageManager.loadMoreCards(temp);
     } else {
-      imageManager.loadMoreImages(8);
+      imageManager.loadMoreCards(8);
     }
   });
 

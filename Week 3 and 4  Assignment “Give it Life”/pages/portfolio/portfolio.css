@@ -107,7 +107,7 @@
   align-items: center;
   justify-content: center;
 }
-#load-more {
+#view-more {
   cursor: pointer;
   border: 1px solid #fff;
   padding: 1rem 1.2rem;
@@ -116,11 +116,11 @@
   transition: 0.2s ease-in-out;
 }
 
-#load-more:hover {
+#view-more:hover {
   transform: scale(1.1);
   background-color: rgb(83, 235, 63);
 }
-#load-more:active {
+#view-more:active {
   transform: scale(0.8);
   background-color: rgb(83, 235, 63);
 }

@@ -62,52 +62,62 @@ window.addEventListener("resize", function () {
 });
 
 document.querySelector(".moveUp").style.height = "auto";
+const container = document.getElementById("porfolioImages");
 
 document.addEventListener("DOMContentLoaded", async () => {
+  let last = 1;
   let numberOfImages = parseInt(localStorage.getItem("numberOfImages"), 10);
 
   if (isNaN(numberOfImages)) {
     numberOfImages = 3;
   }
 
+  const container = document.getElementById("porfolioImages");
   const imageManager = new ImageManager(numberOfImages);
   await imageManager.fetchImages();
 
-  const overlay = document.querySelector(".image-container__overlay-of-images");
-  const wrapper = document.querySelector(".image-container__image-wrapper");
-  const images = document.querySelectorAll(".imageShowcase");
-  const length = 60;
-
-  // Apply width to all images initially
-  images.forEach((image) => {
-    image.style.width = `${length}px`;
+  imageManager.images.forEach((image) => {
+    addCard(image.imageUrl);
   });
-
-  let position = numberOfImages;
-  wrapper.style.transform = `translateX(-${length * position}rem)`;
 
   document
     .querySelector(".image-container__moving-icon--right")
     .addEventListener("click", async () => {
       await imageManager.loadMoreImages(1);
+      addCard(imageManager.images[numberOfImages - 1].imageUrl);
       localStorage.setItem("numberOfImages", ++numberOfImages);
-      wrapper.style.transform = `translateX(-${length * ++position}rem)`;
-      // Reapply width in case styles are altered during loading
-      images.forEach((image) => {
-        image.style.width = `${length}rem`;
-      });
+      console.log(numberOfImages);
+      console.log(container.children[numberOfImages]);
     });
 
   document
     .querySelector(".image-container__moving-icon--left")
-    .addEventListener("click", () => {
-      if (position > 0) {
-        localStorage.setItem("numberOfImages", --numberOfImages);
-        wrapper.style.transform = `translateX(-${length * --position}rem)`;
-        // Reapply width in case styles are altered during loading
-        images.forEach((image) => {
-          image.style.width = `${length}rem`;
-        });
+    .addEventListener("click", async () => {
+      if (numberOfImages > 1) {
+        removeCard();
+        console.log(numberOfImages);
+        console.log(container.children[numberOfImages]);
+        localStorage.setItem("numberOfImages", numberOfImages--);
       }
     });
+
+  async function addCard(url) {
+    const imageCard = document.createElement("div");
+    imageCard.classList.add("image-cotainer__item-show");
+
+    imageCard.style.background = `url(${url})`;
+    imageCard.style.backgroundSize = "cover";
+    imageCard.style.backgroundPosition = "center";
+    container.appendChild(imageCard);
+    setTimeout(() => {
+      imageCard.style.height = "100%";
+    }, 1);
+  }
+
+  async function removeCard() {
+    if (container.children.length > 0) {
+      const lastChild = container.children[container.children.length - last++];
+      lastChild.style.height = "0%";
+    }
+  }
 });
